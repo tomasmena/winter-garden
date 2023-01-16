@@ -123,7 +123,9 @@ streams=client.stream.list(stream_limit=10)
 #print (streams)
 #Get Stream Names
 
-stream_id= [(s.id) for s in streams if s.name == "Winter Garden" ]
+print(streams)
+
+stream_id= [s.id for s in streams if s.name == "Winter Garden" ]
 
 #sName=client.stream.search("Winter_Garden") #st.selectbox(label="Select your stream", options=streamNames,help="Select your Stream from the dromdown menu")
 
