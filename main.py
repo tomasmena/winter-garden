@@ -13,10 +13,10 @@ from specklepy.objects.geometry import Point
 from specklepy.transports.server import ServerTransport
 from specklepy.api import operations
 #import pandas
-import pandas as pd
+# import pandas as pd
 # import plotly express
-import plotly_express as px
-import json
+# import plotly_express as px
+# import json
 from client import listen
 
 # -----------------------------------------------
@@ -34,6 +34,7 @@ st.set_page_config(
 #CONTAINERS
 
 header= st.container()
+acknow=st.container()
 miro_slide  = st.container()
 viewer = st.container()
 viewer2=st.container()
@@ -50,14 +51,16 @@ with header:
 
 # About info
 
-with header.expander("About this app 🔽", expanded=True):
+with header.expander("About the Winter Garden 🔽", expanded=True):
 
     st.markdown(
-
-        """ The Winter Garden Project is a device for the collective practice and public engagement.
+        
+        """The Winter Garden-terrarium is a performative installation by Alejandro Haiek at the "Retake/Reuse: experiments to reactivate public space" public event, seminar coordinated by Maria-Luna Nobile and Maria Kraft from Circolo Scandinavo. The research proposal was granted as small visionary project by the Research Center for Architecture, Design and the Arts (UmArts), and presented this winter at seeking to support research active staff within the Umeå University Arts campus. The prototype was developed in collaboration with an interdisciplinary project team composed by Tomas Mena, Rebecca Rudolph, Raffaelle Errichiello and Alejandra Diaz, with student participation from Denis Zeile and technical support by Håkan Hansson, Kent Brodin and Sven-Erik Hilberer from UMA school of Architecture; alongside Fatemeh Morandi from the UXlab, School of Informatics, with the students team: Hiran Herath, Kevin Charles Dalli, Parisima Alaie, Viktor Sjöström, William Sahlin, and advised by Gesche Blume-Werry from the Department of Ecology and Environmental Sciences, Umeå University, Sweden
         """
-        """ The object will investigate how urban winter gardens can have a regenerative social impact in Nordic, urban contexts, and how temporary structures can help us formulate new responsive, ecological environments."""
-    )
+
+       )
+
+
 
 #----------------------------------
 
@@ -151,10 +154,10 @@ def commit2viewer2(stream,commit,height=400)-> str:
     #embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=f42a6e31b6"
     return embed_src
 with viewer2:
-
+    miro_press="https://miro.com/app/embed/uXjVPIM8c1s=/?pres=1&frameId=3458764542318361710&embedId=103072764328"
     miroCol, speckleCol = st.columns(2)
     miroCol.subheader("Winter Garden Slide show")
-    miroCol._iframe("https://miro.com/app/live-embed/uXjVPIM8c1s=/?moveToViewport=6988,3966,738,494&embedId=203702165751",height=540)
+    miroCol._iframe(miro_press,height=540)
     speckleCol.subheader("Winter garden Digital twin")
     speckleCol._iframe(commit2viewer2(stream,commits[0]),height=540)
 
