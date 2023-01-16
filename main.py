@@ -96,7 +96,7 @@ with header.expander("About the Winter Garden 🔽", expanded=True):
 
 speckleServer= "speckle.xyz"#serverCol.text_input("Server URL", "speckle.xyz", help="Speckle server to connect.")
 
-speckleToken="5273839990f675ca3830bf0c1df74b71610fb00b48" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
+speckleToken="ea0976f5cd5a111c1e925e72ce01f8ef00fbfd6ee0" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
     #----------------
 
  ###  interacting with speckle Server ###
@@ -150,7 +150,7 @@ commits= client.commit.list(stream_id[0],limit=100)
 
 def commit2viewer2(stream,commit,height=400)-> str:
 
-    embed_src="http://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
+    embed_src="https://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
     #embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=f42a6e31b6"
     return embed_src
 with viewer2:
