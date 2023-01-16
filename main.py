@@ -107,7 +107,7 @@ client= SpeckleClient(host=speckleServer)
 
 #Get account from Token
 
-account=get_account_from_token(speckleToken,speckleServer)
+account=get_account_from_token("a3d8170e6b12393d5dbd45b9480c71bd47185bf110",speckleServer)
 
 #Authenticate
 
