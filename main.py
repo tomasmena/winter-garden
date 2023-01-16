@@ -99,7 +99,7 @@ speckleServer= "speckle.xyz"#serverCol.text_input("Server URL", "speckle.xyz", h
 speckleToken="a3d8170e6b12393d5dbd45b9480c71bd47185bf110" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
     #----------------
 
-    ###  interacting with speckle Server ###
+ ###  interacting with speckle Server ###
 
     #CLIENT //
 
@@ -134,7 +134,7 @@ stream_id= [s.id for s in streams if s.name == "Winter Garden" ]
 stream=client.stream.get(stream_id[0])
 
 #Stream Branches
-branches=client.branch.list(stream.id)
+#branches=client.branch.list(stream.id)
 #print (stream_id)
 #Stream Commits
 commits= client.commit.list(stream_id[0],limit=100)
