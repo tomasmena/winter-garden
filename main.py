@@ -123,8 +123,6 @@ streams=client.stream.list(stream_limit=10)
 #print (streams)
 #Get Stream Names
 
-print(streams)
-
 stream_id= [s.id for s in streams if s.name == "Winter Garden" ]
 
 #sName=client.stream.search("Winter_Garden") #st.selectbox(label="Select your stream", options=streamNames,help="Select your Stream from the dromdown menu")
@@ -140,11 +138,11 @@ stream=client.stream.get(stream_id[0])
 commits= client.commit.list(stream_id[0],limit=100)
     #Embedded Iframe
 
-def commit2viewer(stream,commit,height=400)-> str:
+# def commit2viewer(stream,commit,height=400)-> str:
 
-    embed_src="http://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
-    #embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=f42a6e31b6"
-    return st.components.v1.iframe(src=embed_src,height=height)
+#     embed_src="http://speckle.xyz/embed?stream="+str(stream.id)+"&commit="+str(commit.id)+"&autoload=true"
+#     #embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=f42a6e31b6"
+#     return st.components.v1.iframe(src=embed_src,height=height)
         
 # with viewer:
 #     st.subheader("Winter Garden Digital Twin")
