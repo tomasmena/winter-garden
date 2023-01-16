@@ -123,7 +123,7 @@ streams=client.stream.list(stream_limit=10)
 #print (streams)
 #Get Stream Names
 
-stream_id= [s.id for s in streams if s.name =="Winter Garden" ]
+stream_id= [(s.id) for s in streams if s.name == "Winter Garden" ]
 
 #sName=client.stream.search("Winter_Garden") #st.selectbox(label="Select your stream", options=streamNames,help="Select your Stream from the dromdown menu")
 
@@ -160,9 +160,6 @@ with viewer2:
     miroCol._iframe(miro_press,height=540)
     speckleCol.subheader("Winter garden Digital twin")
     speckleCol._iframe(commit2viewer2(stream,commits[0]),height=540)
-
-    
-
 
 
     #VIEWER
