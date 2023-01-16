@@ -154,13 +154,12 @@ def commit2viewer2(stream,commit,height=400)-> str:
     #embed_src="https://speckle.xyz/embed?stream=8dd22c09e4&commit=f42a6e31b6"
     return embed_src
 with viewer2:
-    miro_press="https://miro.com/app/embed/uXjVPIM8c1s=/?pres=1&frameId=3458764542318361710&embedId=103072764328"
+    miro_press="https://miro.com/app/embed/uXjVPIM8c1s=/?pres=1&frameId=3458764542318361710&embedId=876239047326"
     miroCol, speckleCol = st.columns(2)
     miroCol.subheader("Winter Garden Slide show")
     miroCol._iframe(miro_press,height=540)
     speckleCol.subheader("Winter garden Digital twin")
     speckleCol._iframe(commit2viewer2(stream,commits[0]),height=540)
-
 
     #VIEWER
 
