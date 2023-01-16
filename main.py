@@ -96,7 +96,7 @@ with header.expander("About the Winter Garden 🔽", expanded=True):
 
 speckleServer= "speckle.xyz"#serverCol.text_input("Server URL", "speckle.xyz", help="Speckle server to connect.")
 
-speckleToken="a3d8170e6b12393d5dbd45b9480c71bd47185bf110" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
+speckleToken="c5b6bc407c9d7052e2ecbc2e2db59dba39a9044834" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
     #----------------
 
  ###  interacting with speckle Server ###
@@ -107,11 +107,11 @@ client= SpeckleClient(host=speckleServer)
 
 #Get account from Token
 
-account=get_account_from_token("a3d8170e6b12393d5dbd45b9480c71bd47185bf110",speckleServer)
+account=get_account_from_token(speckleToken,speckleServer)
 
 #Authenticate
 
-client.authenticate_with_token("a3d8170e6b12393d5dbd45b9480c71bd47185bf110")
+client.authenticate_with_token(speckleToken)
 
 # --------------- Object ---------------
 
