@@ -1,2 +1,2 @@
 streamlit==1.14.0
-
+specklePy == 2.9.1
