@@ -103,15 +103,51 @@ speckleToken="a3d8170e6b12393d5dbd45b9480c71bd47185bf110" #tokenCol.text_input("
 
     #CLIENT //
 
+def getStreams(client):
+    return client.stream.list()
+
+try:
+     access_code = st.experimental_get_query_params()['access_code'][0]
+     st.session_state['access_code'] = access_code
+     print (access_code)
+except:
+    access_code = None
+    st.session_state['access_code'] = None
+
+# token = st.session_state['token']
+# refresh_token = st.session_state['refresh_token']
+
+# print (token)
+
+
+# streams = None
+# if st.session_state['refresh_token']:
+#     account = get_account_from_token("speckle.xyz", speckleToken)
+#     client = SpeckleClient(host="speckle.xyz")
+#     client.authenticate_with_token(speckleToken)
+#     try:
+#         streams = getStreams(client)
+#     except:
+#         streams = None
+#     if not isinstance(streams, list):
+#         account = get_account_from_token("speckle.xyz", refresh_token)
+#         client = SpeckleClient(host="speckle.xyz")
+#         client.authenticate_with_token(refresh_token)
+#         try:
+#             streams = getStreams(client)
+#         except:
+#             streams = None
+
+
 client= SpeckleClient(host=speckleServer)
 
 #Get account from Token
 
-account=get_account_from_token("a3d8170e6b12393d5dbd45b9480c71bd47185bf110",speckleServer)
+account=get_account_from_token(speckleToken,speckleServer)
 
 #Authenticate
 
-client.authenticate_with_token("a3d8170e6b12393d5dbd45b9480c71bd47185bf110")
+client.authenticate_with_token(speckleToken)
 
 # --------------- Object ---------------
 
@@ -120,10 +156,8 @@ client.authenticate_with_token("a3d8170e6b12393d5dbd45b9480c71bd47185bf110")
 #Stream lists
 
 streams=client.stream.list(stream_limit=10)
-#print (streams)
-#Get Stream Names
-
-print(streams)
+# print (streams)
+# Get Stream Names
 
 stream_id= [s.id for s in streams if s.name == "Winter Garden" ]
 
