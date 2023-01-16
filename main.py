@@ -166,16 +166,16 @@ with viewer2:
 
     #VIEWER
 
-async def render_points():
-        url="ws://winter-garden-server.glitch.me"
-        async with websockets.connect(url) as websocket:
-            await websocket.send("hello server")
-            while True:
-                msg = await websocket.recv()
-                with report:
-                    st.text(msg)
-                print(msg)
-                # return msg
+# async def render_points():
+#         url="ws://winter-garden-server.glitch.me"
+#         async with websockets.connect(url) as websocket:
+#             await websocket.send("hello server")
+#             while True:
+#                 msg = await websocket.recv()
+#                 with report:
+#                     st.text(msg)
+#                 print(msg)
+#                 # return msg
 
 # asyncio.get_event_loop().run_until_complete(render_points())
 
