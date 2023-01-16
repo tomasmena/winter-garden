@@ -1,2 +1,2 @@
-streamlit==1.1.0
-specklepy==2.9.1
+streamlit==1.14.0
+
