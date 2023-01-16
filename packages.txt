@@ -1,1 +1,1 @@
-specklepy == 2.9.1
+specklePy == 2.9.1
