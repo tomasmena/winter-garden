@@ -111,7 +111,7 @@ account=get_account_from_token(speckleToken,speckleServer)
 
 #Authenticate
 
-client.authenticate_with_token(str(speckleToken))
+client.authenticate_with_token(speckleToken)
 
 # --------------- Object ---------------
 
