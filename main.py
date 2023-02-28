@@ -93,7 +93,7 @@ with header.expander("About this app 🔽", expanded=True):
 
 speckleServer= "speckle.xyz"#serverCol.text_input("Server URL", "speckle.xyz", help="Speckle server to connect.")
 
-speckleToken="a3d8170e6b12393d5dbd45b9480c71bd47185bf110" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
+speckleToken="1aa850ec030fbb29e062e4a561e594f0246e110b30" #tokenCol.text_input("Speckle token","Please enter your token here", help="If you don't know how to get your token, take a look at this [link](<https://speckle.guide/dev/tokens.html>)👈")
     #----------------
 
     ###  interacting with speckle Server ###
