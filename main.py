@@ -54,9 +54,7 @@ with header.expander("About this app 🔽", expanded=True):
 
     st.markdown(
 
-        """ The Winter Garden Project is a device for the collective practice and public engagement.
-        """
-        """ The object will investigate how urban winter gardens can have a regenerative social impact in Nordic, urban contexts, and how temporary structures can help us formulate new responsive, ecological environments."""
+        """ The Winter Garden-terrarium is a performative installation by Alejandro Haiek at the "Retake/Reuse: experiments to reactivate public space" public event, seminar coordinated by Maria-Luna Nobile and Maria Kraft from Circolo Scandinavo. The research proposal was granted as small visionary project by the Research Center for Architecture, Design and the Arts (UmArts), and presented this winter at seeking to support research active staff within the Umeå University Arts campus. The prototype was developed in collaboration with an interdisciplinary project team composed by Tomas Mena, Rebecca Rudolph, Raffaelle Errichiello and Alejandra Diaz, with student participation from Denis Zeile and technical support by Håkan Hansson, Kent Brodin and Sven-Erik Hilberer from UMA school of Architecture; alongside Fatemeh Morandi from the UXlab, School of Informatics, with the students team: Hiran Herath, Kevin Charles Dalli, Parisima Alaie, Viktor Sjöström, William Sahlin, and advised by Gesche Blume-Werry from the Department of Ecology and Environmental Sciences, Umeå University, Sweden."""
     )
 
 #----------------------------------
