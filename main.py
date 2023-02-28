@@ -54,7 +54,7 @@ with header.expander("About this app 🔽", expanded=True):
 
     st.markdown(
 
-        """ The Winter Garden-terrarium is a performative installation by Alejandro Haiek at the "Retake/Reuse: experiments to reactivate public space" public event, seminar coordinated by Maria-Luna Nobile and Maria Kraft from Circolo Scandinavo. The research proposal was granted as small visionary project by the Research Center for Architecture, Design and the Arts (UmArts), and presented this winter at seeking to support research active staff within the Umeå University Arts campus. The prototype was developed in collaboration with an interdisciplinary project team composed by Tomas Mena, Rebecca Rudolph, Raffaelle Errichiello and Alejandra Diaz, with student participation from Denis Zeile and technical support by Håkan Hansson, Kent Brodin and Sven-Erik Hilberer from UMA school of Architecture; alongside Fatemeh Morandi from the UXlab, School of Informatics, with the students team: Hiran Herath, Kevin Charles Dalli, Parisima Alaie, Viktor Sjöström, William Sahlin, and advised by Gesche Blume-Werry from the Department of Ecology and Environmental Sciences, Umeå University, Sweden."""
+        """The Winter Garden-terrarium is a performative installation by Alejandro Haiek at the "Retake/Reuse: experiments to reactivate public space" public event, seminar coordinated by Maria-Luna Nobile and Maria Kraft from Circolo Scandinavo. The research proposal was granted as small visionary project by the Research Center for Architecture, Design and the Arts (UmArts), and presented this winter at seeking to support research active staff within the Umeå University Arts campus. The prototype was developed in collaboration with an interdisciplinary project team composed by Tomas Mena, Rebecca Rudolph, Raffaelle Errichiello and Alejandra Diaz, with student participation from Denis Zeile and technical support by Håkan Hansson, Kent Brodin and Sven-Erik Hilberer from UMA school of Architecture; alongside Fatemeh Morandi from the UXlab, School of Informatics, with the students team: Hiran Herath, Kevin Charles Dalli, Parisima Alaie, Viktor Sjöström, William Sahlin, and advised by Gesche Blume-Werry from the Department of Ecology and Environmental Sciences, Umeå University, Sweden"""
     )
 
 #----------------------------------
@@ -152,9 +152,10 @@ with viewer2:
 
     miroCol, speckleCol = st.columns(2)
     miroCol.subheader("Winter Garden Slide show")
-    miroCol._iframe("https://miro.com/app/live-embed/uXjVPIM8c1s=/?moveToViewport=6988,3966,738,494&embedId=203702165751",height=540)
+    miroCol._iframe("https://miro.com/app/embed/uXjVPIM8c1s=/?pres=1&frameId=3458764545879154142&embedId=131922087994",height=540)
     speckleCol.subheader("Winter garden Digital twin")
     speckleCol._iframe(commit2viewer2(stream,commits[0]),height=540)
+    
 
     
 
